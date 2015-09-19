@@ -42,7 +42,7 @@ feature "user signs up for an account" do
     fill_in "Password", with: "password"
     click_button "Login"
     expect(current_path).to eq(user_path(1))
-    click_link "Logout"
+    click_button "Logout"
     save_and_open_page
   end
 
